@@ -1,0 +1,11 @@
+<%- include("./partials/header.ejs")%>
+    <h1>
+        <% 
+        if(year<1980){
+            return '<h1>very old</h1>'
+        }else if(year<2010){return '<h1>old</h1>'}
+        else if(year<2020){return '<h1>new</h1>'}
+        else{return '<h1>futrue</h1>'}
+        %>
+    </h1>
+<%- include("./partials/footer.ejs")%>

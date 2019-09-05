@@ -1,0 +1,175 @@
+<!doctype html>
+<!--The <!doctype> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.-->
+<html lang="en">
+
+<head>
+    <title>Mao's Home Page</title>
+    <meta charset="utf-8">
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            color: red;
+            margin: 0 0 0 0;
+            padding: 1em 1em 1em 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Heading</h1>
+    <h2>Subheading</h2>
+    <h3>Tertiary Heading</h3>
+    <h4>Quaternary heading</h4>
+    <h5>Quinary heading</h5>
+    <h6>Senary heading</h6>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie risus a enim Convallis; vitae luctus
+        libero
+        lacinia. Maecenas sit <q cite='http://www.heydonworks.com'>amet tellus nec mi gravida posuere</q> non pretium
+        magna.
+        Cras molestie risus a enim &#8216;convallis vitae&#8217; luctus libero lacinia. Maecenas sit amet tellus &ndash;
+        nec
+        mi gravida posuere non pretium magna. Aliquam nisl enim&hellip; tristique tempus placerat at, posuere in lectus.
+        Nulla auctor eleifend turpis consequat pharetra. Aliquam <del>tincidunt velit</del> sit amet ante hendrerit
+        tempus.
+    </p>
+    <p>Aliquam tincidunt velit sit amet <a href='#'>ante hendrerit</a> tempus. Nulla lobortis tempus commodo? Aliquam
+        <del>tincidunt velit</del> sit amet ante hendrerit tempus. Duis sagittis, est sit amet <strong>gravida
+            tristique</strong>, purus lectus venenatis urna, id <code>#FFFFFF</code> risus ut nunc. Donec a congue leo?
+        Sed
+        dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh (iaculis pretium sem orci aliquet mauris).
+        Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. </p>
+    <p>Nulla auctor eleifend turpis consequat pharetra. Donec a congue leo. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. </p>
+    <p>Fusce ac sodales <abbr title='Cascading Style Sheets'>CSS</abbr> magna. Suspendisse potenti cras molestie, risus
+        a
+        enim convallis vitae luctus libero lacinia. Cras molestie risus a enim Convallis; vitae luctus libero lacinia.
+        Duis
+        sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id &#8216;molestie&#8217; magna risus ut
+        nunc. <strong>Donec a congue leo. </strong>Donec tempus tempus tellus, ac <abbr
+            title='Hypertext Markup Language'>HTML</abbr> lacinia turpis mattis ac. </p>
+    <p>Duis sagittis, est sit amet <strong>gravida tristique</strong>, purus lectus venenatis urna, id
+        <code>#FFFFFF</code> risus ut nunc. Donec a congue leo? Nulla auctor eleifend 23<sup>rd</sup> of May turpis
+        consequat pharetra. Donec tempus tempus tellus, ac lacinia turpis mattis ac! Nulla auctor eleifend turpis
+        consequat
+        pharetra. </p>
+
+    <figure class="hero-image">
+        <img src="assets/lightbulb.svg" alt="Learn" class="icon">
+    </figure>
+    <figure class="hero-image">
+        <img src="assets/airplane-turbo-fan.jpg" alt="Airplane Turbo Fan">
+    </figure>
+
+    <p>HTML elements are the building blocks of the language. As almost every element can be the parent of another
+        element, it's more helpful to think of elements as parts of a tree structure.</p>
+    <p>A section is a thematic grouping of content, typically with a heading.</p>
+    <p>Almost any HTML element in the body of a page can be made to display in any way you wish using an appropriate
+        stylesheet. So the choice of element used to add structure to your content is a semantic one, not a styling one!
+    </p>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ul>
+        <li>External style sheet</li>
+        <li>Internal style sheet</li>
+        <li style="font-weight: bold; list-style-type: square; color: blue; list-style-position: inside;">Inline style
+        </li>
+    </ul>
+
+    <p>An inline style has the highest priority, and will override external and internal styles and browser defaults.
+    </p>ß
+    <ul>
+        <li>Apples
+            <ul>
+                <li>Braeburn</li>
+                <li>Granny Smith</li>
+                <li>Macintosh</li>
+                <li>Spartan</li>
+            </ul>
+        </li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+        <li>Dates</li>
+    </ul>
+    <h2>Social media icons</h2>
+    <ul>
+        <li><i class="fas fa-camera"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fas fa-codepen"></i></li>
+        <li><i class="fab fa-js-square"></i></li>
+        <li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>
+    </ul>
+
+    <blockquote>
+        <p>This example markup is for a quotation that deserves to
+            stand out and runs to more than just a few words that would
+            normally be quoted inline within a sentence.</p>
+    </blockquote>
+
+
+    <section class="second-section">
+        <header>Section Header</header>
+        <main>
+            <h1 class="abrilfatface">Abril Fatface and Josefin Sans</h1>
+            <p class="josefinsans">Typography design is best understood by analyzing other prominent websites to figure
+                out
+                why their text reads so well on the digital screen.</p>
+            <p class="josefinsans">Web type needs clean, easy-to-read combinations that clearly define heading,
+                subheading
+                and body copy so readers can scan and identify what they want to read. It's always good to consider the
+                essence you are trying to visually communicate with your audience. Choosing a typeface isn't just about
+                whether you like it or not, it's about how the words in your copy look when the typeface is applied.</p>
+            <p class="josefinsans">Using mixed weights of one typeface is an excellent way to enhance hierarchy and form
+                some nuance. Many designers feel that sans-serif fonts are easier to read on the web. Serif fonts won't
+                present a problem, so long as they're sized properly. Using a serif for your body copy can make more
+                dense
+                information easy to read. Paragraph font choice really depends on the type of website. Using an
+                <em>italic</em> pronounces a word or subheading without having to change font-families. Round and narrow
+                typefaces offset nicely against each other. Use light and <strong>bold</strong> versions of the same
+                family
+                for versatility.</p>
+            <p class="josefinsans">Design hyperlinks so that they appear "clickable". Great link design is <a href="#">a
+                    lengthy subject</a>. The link hover state should also be noticeable whenever a visitor hovers their
+                mouse
+                over a hyperlink.</p>
+            <p class="highlight"><strong>Lab Assignment:</strong> Create your resume in one column. Use block and inline
+                elements including headings, paragraphs, lists, strong, etc. Use one serif font for headings and one
+                san-serif
+                font for body copy from Google Fonts. Establish a strong typographic hierarchy using a modular scale for
+                easier reading. Include hyperlinks to companies and schools that stand out on hover. Colour can be
+                greyscale
+                but try adding at least one accent colour. Use classes to label, align and style elements as desired.
+            </p>
+        </main>
+        <footer>Section Footer</footer>
+
+    </section>
+    <ol>
+        <li>Aesthetic Usability Effect</li>
+        <li>Doherty Threshold</li>
+        <li>Fitts's Law</li>
+        <li>Hick's Law</li>
+        <li>Jakob's Law&mdash;You can simplify the learning process for users by providing familiar design patterns.
+        </li>
+        <li>Law of Common Region</li>
+        <li>Law of Pragnanz</li>
+        <li>Law of Proximity</li>
+        <li>Law of Similarity</li>
+        <li>Law of Uniform Connectedness</li>
+        <li>Miller's Law</li>
+        <li>Occam's Razor</li>
+        <li>Pareto Principle</li>
+        <li>Parkinson's Law</li>
+        <li>Postel's Law</li>
+        <li>Serial Position Effect</li>
+        <li>Tesler's Law</li>
+        <li>Von Restorff Effect</li>
+        <li>Zeigarnik Effect</li>
+    </ol>
+    <button>Learn More</button>
+</body>
+
+</html>

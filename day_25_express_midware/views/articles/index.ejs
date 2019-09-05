@@ -1,0 +1,12 @@
+<%- include("../partials/header.ejs")%>
+<%- include("../partials/navigation.ejs")%>
+    <ul class="list-group">
+        <% for(let article of articles){%>
+            <a href="/articles/<%= article.id%>">
+                <li class="list-group-item list-group-itme-action list-group-item-primary">
+                    <%= article.title%>
+                </li>
+            </a>
+        <%}%>
+    </ul>
+<%- include("../partials/footer.ejs")%>

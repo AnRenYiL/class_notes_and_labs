@@ -1,0 +1,47 @@
+<%- include("./partials/header.ejs")%>
+<%- include("./partials/navigation.ejs")%>
+ <!-- 
+    When a form is submitted, a HTTP request is made by the browser.
+    By default its a GET request to the current URL
+
+    Forms have a action attribute that is used to determine which path the form
+    submits to
+
+    We can use the attribute method to determine what HTTP verb is used to make the
+    request
+    method="get"
+   -->
+    <form action="/thank_you" >
+    
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="favouriteColor">FavouriteColor</label>
+            <input type="color" name="favouriteColor">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" text=""></textarea>
+        </div>
+        <div>
+       <label> What's your favourite day of the week?</label><br>
+             <% const days = [
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                    ] %>
+            <% for (let day of days) { %>
+            <input type="radio" name="favouriteDay" value="<%= day%>">
+            <label for="<%= day%>"><%= day%></label>
+            <br>
+            <% } %>
+        </div>
+        <input type="submit" value="Send">
+    </form>
+<%- include("./partials/footer.ejs")%>

@@ -1,0 +1,10 @@
+let arr=[1,2,3,4,5];
+let arr1=arr;
+let arr2=arr.concat([]);
+console.log(arr);
+console.log(arr1);
+console.log(arr2);
+arr.push(1);
+console.log(arr);
+console.log(arr1);
+console.log(arr2);

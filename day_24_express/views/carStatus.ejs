@@ -1,0 +1,16 @@
+<%- include("./partials/header.ejs")%>
+<%- include("./partials/navbar.ejs")%>
+<form action="/show_year">
+    <div>
+        <label for="year">Year</label>
+        <select name="year">
+            <% for(let i=1950;i<=2025;i++){%>
+             <option value="<%= i%>"><%= i%></option>
+            <%} %>
+        </select>
+        <div></div>
+        <% %>
+    </div>
+    <input type="submit" value="Send">
+</form>
+<%- include("./partials/footer.ejs")%>

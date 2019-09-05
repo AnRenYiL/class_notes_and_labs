@@ -1,0 +1,18 @@
+<%- include("../partials/header.ejs")%>
+<%- include("../partials/navigation.ejs")%>
+    <div>
+        <h2>
+            <%= article.title%>
+            <span><%= article.viewCount%></span>
+        </h2>
+        <p>
+            <%= article.content%>
+        </p>
+        <div><%= article.username%></div>
+        <form action="/articles/<%= article.id %>" method="POST">
+            <input type="hidden" value="DELETE" name="_method">
+            <input type="submit" value="Delete" class="btn btn-danger">
+        </form>
+    </div>
+    <a href="/articles/<%= article.id %>/edit" class="btn btn-info">Edit</a>
+<%- include("../partials/footer.ejs")%>

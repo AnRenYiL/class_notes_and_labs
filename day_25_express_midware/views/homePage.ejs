@@ -1,0 +1,13 @@
+<%- include("./partials/header.ejs")%>
+    <% if(userName){%>
+        <% if(language=='English'){%>
+            <h1>Hello <%=userName %></h1>
+        <%} else if(language=='French'){%>
+            <h1>Bonjour <%=userName %></h1>
+        <%} else{%>
+            <h1>Hola <%=userName %></h1>
+        <%}%>
+    <%} else{%>
+    <h1>Welcome to My Awesome Website</h1>
+    <%}%>
+<%- include("./partials/footer.ejs")%>

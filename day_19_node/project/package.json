@@ -1,0 +1,18 @@
+{
+  "name": "qrcodeproject",
+  "version": "0.0.1",
+  "description": "Experiment with Node modules and QPCode library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mao Li",
+  "license": "MIT",
+  "dependencies": {
+    "csv": "^5.1.2",
+    "csv-parser": "^2.3.0",
+    "csv-writer": "^1.5.0",
+    "jimp": "^0.6.4",
+    "qrcode": "^1.4.1"
+  }
+}

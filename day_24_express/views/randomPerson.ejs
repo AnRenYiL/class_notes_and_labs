@@ -1,0 +1,11 @@
+<%- include("./partials/header.ejs")%>
+<%- include("./partials/navbar.ejs")%>
+<form action="/random_person" >
+    <div>
+        <label for="names">Persons name</label>
+        <textarea rows="5" name="names" text=""></textarea>
+    </div>
+<input type="submit" value="Check">
+<h1><%=result%></h1>
+</form>
+<%- include("./partials/footer.ejs")%>

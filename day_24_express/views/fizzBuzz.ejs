@@ -1,0 +1,17 @@
+<%- include("./partials/header.ejs")%>
+<%- include("./partials/navbar.ejs")%>
+<form action="/fizz_buzz" >
+        <div>
+         <label for="fizz">Fizz</label>
+        <input type="text" name="fizz">
+    </div>
+    <div>
+         <label for="buzz">Buzz</label>
+        <input type="text" name="buzz">
+    </div>
+<input type="submit" value="Fizz_Buzz">
+<% for(let i=0;i<array.length;i++){%>
+        <h3><%= array[i]%></h3>
+<%} %>
+</form>
+<%- include("./partials/footer.ejs")%>

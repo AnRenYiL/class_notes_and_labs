@@ -1,0 +1,105 @@
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 768px) {
+    .logo {
+        height: 10vh;
+    }
+
+    .nav {
+        width: 90%;
+        margin-right: 1.5em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* space-between  space-around */
+        align-items: center;
+        margin-top: .9em;
+    }
+
+    article {
+        flex: 1;
+        justify-content: space-between;
+        align-items: stretch
+    }
+
+    .home-question,
+    .home-answer {
+        padding: 5em;
+    }
+
+    .home-question {
+        width: 40%;
+    }
+
+    .home-answer {
+        width: 60%;
+    }
+
+    /* Typography Styles */
+    h1,
+    h2,
+    h3 {
+        font-family: 'Staatliches', cursive;
+    }
+
+    h1 {
+        font-size: 8em;
+        font-weight: bolder;
+    }
+
+    h2 {
+        color: #f0c070;
+        font-size: 4em;
+    }
+}
+
+@media(max-width: 768px) {
+    .logo {
+        height: 10vh;
+    }
+
+    .nav {
+        width: 90%;
+        margin-right: 1.5em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* space-between  space-around */
+        align-items: center;
+    }
+
+    article {
+        flex: 1;
+    }
+
+    li {
+        margin: .5em;
+    }
+
+    .home-question,
+    .home-answer {
+        padding: 5em;
+    }
+
+    /* Typography Styles */
+    h1,
+    h2,
+    h3 {
+        font-family: 'Staatliches', cursive;
+    }
+
+    h1 {
+        font-size: 5em;
+        font-weight: bolder;
+    }
+
+    h2 {
+        color: #f0c070;
+        font-size: 3em;
+    }
+}

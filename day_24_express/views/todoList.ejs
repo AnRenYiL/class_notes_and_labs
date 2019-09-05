@@ -1,0 +1,40 @@
+<%- include("./partials/header.ejs")%>
+<%if(name){%>
+<div class="row">
+    <div class="col-md-1 offset-md-11">
+        <form action="/todo_list" method="POST">
+            <h3><%= name%></h3>
+            <input type="submit" value="Log Out" class="btn btn-danger">
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form action="/show_todo_list" method="POST">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" name="title">
+            </div>
+            <div class="form-group">
+                <label for="body">Body:</label>
+                <textarea name="body" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+<%} else{%>
+<h1>This is TodoList page</h1>
+<form action="/todo_list" method="POST">
+    <div class="form-group">
+        <label for="name">User Name:</label>
+        <input type="text" class="form-control" name="name">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Pass word:</label>
+        <input type="password" class="form-control" name="pwd">
+    </div>
+    <input type="submit" value="Log In" class="btn btn-primary">
+</form>
+<%} %>
+<%- include("./partials/footer.ejs")%>

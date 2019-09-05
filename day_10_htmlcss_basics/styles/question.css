@@ -1,0 +1,67 @@
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px) {
+    article {
+        justify-content: space-between;
+        align-items: stretch;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 27%;
+        margin: 3%;
+        transition: all 0.3s ease-out;
+
+    }
+
+    .card:hover {
+        box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 1);
+        transform: translateY(-2px) scale(1) translateZ(0);
+    }
+
+    .pullquote {
+        font-size: 3em;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .stamps {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+}
+
+article {
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    margin: 3%;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 1);
+    transform: translateY(-2px) scale(1) translateZ(0);
+}
+
+.pullquote {
+    font-size: 3em;
+    font-family: 'Staatliches', cursive;
+}
+
+.stamps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+}

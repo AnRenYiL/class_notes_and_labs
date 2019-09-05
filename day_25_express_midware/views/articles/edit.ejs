@@ -1,0 +1,7 @@
+<%- include("../partials/header.ejs")%>
+<%- include("../partials/navigation.ejs")%>
+<form action="/articles/<%= article.id %>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+    <%- include("./partials/formInput.ejs")%>
+</form>
+<%- include("../partials/footer.ejs")%>

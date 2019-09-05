@@ -1,0 +1,224 @@
+@import url("reset.css");
+/* Eric Meyer */
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+
+html,
+body {
+    height: 100%;
+    /* required for min-height: 100% to work on the header; alternatively, you could use min-height: 100vh; */
+}
+
+body {
+    background: lightblue;
+    font-family: Thasadith;
+
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: pink;
+    /* height: 100vh; */
+    min-height: 100%;
+    background: url(../assets/hero-ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    /* Horizontal */
+    align-items: center;
+    /* Vertical */
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.052em;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.441em;
+    font-weight: 900;
+    text-align: center;
+}
+
+article {
+    background: yellowgreen;
+    padding: .125em;
+}
+
+.item {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limerick {
+    font-family: Staatliches;
+    font-size: 3em;
+}
+
+
+
+/* Desktop Styles Last */
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .item {
+        background: yellow;
+    }
+
+    .item {
+        width: 50%;
+        padding: 2em;
+        ;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+    }
+
+
+}
+
+@import url("reset.css");
+/* Eric Meyer */
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+
+html,
+body {
+    height: 100%;
+    /* required for min-height: 100% to work on the header; alternatively, you could use min-height: 100vh; */
+}
+
+body {
+    background: lightblue;
+    font-family: Thasadith;
+
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: pink;
+    /* height: 100vh; */
+    min-height: 100%;
+    background: url(../assets/hero-ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    /* Horizontal */
+    align-items: center;
+    /* Vertical */
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.052em;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.441em;
+    font-weight: 900;
+    text-align: center;
+}
+
+article {
+    background: yellowgreen;
+    padding: .125em;
+}
+
+.item {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limerick {
+    font-family: Staatliches;
+    font-size: 3em;
+}
+
+
+
+/* Desktop Styles Last */
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .item {
+        background: yellow;
+    }
+
+    .item {
+        width: 50%;
+        padding: 2em;
+        ;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+    }
+
+    .b-text,
+    .d-text {
+        order: -1;
+    }
+
+
+}

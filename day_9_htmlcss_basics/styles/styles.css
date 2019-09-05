@@ -1,0 +1,105 @@
+@import url(reset.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css);
+
+body {
+    /* background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    font-family: 'Saira Stencil One', cursive;
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 1.75rem 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+small,
+.text_small {
+    font-size: 0.8em;
+}
+
+/* Image styles */
+
+img {
+    /* If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size */
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    width: 80vw;
+    margin: 0 auto;
+    /* when an element has a width and the left and right margin is set to auto, the element will be centered;*/
+}
+
+.fab {
+    color: white;
+}
+
+.fab:hover {
+    color: black;
+}
+
+/* Hyperlink styles LoVe and HAte */
+
+a:link {
+    text-decoration: none;
+    color: orange;
+}
+
+a:visited {}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 10px solid white;
+    padding-left: .75em;
+    margin-left: .75em;
+}
+
+button {
+    background: white;
+    border-radius: 1em;
+    /* Rounded corners */
+    border: none;
+    padding: 1em 2em;
+    /* Double the left and right padding from the top and bottom padding for buttons */
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
