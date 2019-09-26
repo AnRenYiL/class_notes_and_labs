@@ -173,3 +173,20 @@ knightNicholas.style.backgroundImage = 'url(images/knight_nicholas.jpg';
 knightNicholas.style.border = '5px solid limegreen';
 
 teamSalmonRoster.appendChild(knightNicholas);
+
+
+document.querySelectorAll('a,p').forEach(e => {
+    e.innerText.includes("es") ? e.parentElement.removeChild(e) : ""
+});
+
+document.querySelectorAll("td").forEach((td, index) => {
+    td.style.background = index % 2 == 0 ? "white" : "black"
+});
+
+const a = document.querySelector(".Header-link");
+const svg = a.removeChild(a.firstElementChild);
+const newImg = document.createElement('img');
+newImg.src = document.querySelector(".markdown-body.entry-content.p-5>p>a>img").src;
+newImg.style.width = svg.width;
+newImg.style.height = svg.height;
+a.appendChild(newImg);
